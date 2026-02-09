@@ -131,7 +131,7 @@ def parse_args() -> tuple[TrainConfig, str, str, bool]:
     parser.add_argument("--imagenet-dir", default="./Imagenet", help="ImageNet64 batch directory")
     parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--batch-size", type=int, default=64)
-    parser.add_argument("--lr", type=float, default=0.01)
+    parser.add_argument("--lr", type=float, default=0.005)
     parser.add_argument("--weight-decay", type=float, default=5e-4)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--num-workers", type=int, default=0)
@@ -192,7 +192,8 @@ def main() -> None:
         momentum=0.9,
         weight_decay=cfg.weight_decay,
     )
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=2, gamma=0.1)
+    # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=2, gamma=0.1)
+    scheduler = None
     train_start = time.perf_counter()
     history = {
         "train_loss": [],
@@ -217,7 +218,9 @@ def main() -> None:
             realtime_progress=cfg.realtime_progress,
         )
         val_loss, val_acc = evaluate(model, val_loader, criterion, device)
-        scheduler.step()
+        # scheduler.step()
+        if scheduler is not None:
+            scheduler.step()
         history["train_loss"].append(train_loss)
         history["train_acc"].append(train_acc)
         history["val_loss"].append(val_loss)
