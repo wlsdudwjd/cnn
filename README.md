@@ -1,4 +1,7 @@
 Alexnet
+<img width="570" height="408" alt="image" src="https://github.com/user-attachments/assets/53cfbec2-dcfb-48fc-a536-66f56c08062e" />
+<img width="564" height="403" alt="image" src="https://github.com/user-attachments/assets/2d83612b-3dd3-4def-8e7e-0eea844e2407" />
+
 
 VGG16
 <img width="1035" height="447" alt="KakaoTalk_20260224_182754127" src="https://github.com/user-attachments/assets/9e7b47cd-126c-436d-a784-3f419cedc4fe" />
