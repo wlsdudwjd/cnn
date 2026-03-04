@@ -14,3 +14,7 @@ resnet50
 
 
 Deeplabv3+
+<img width="1315" height="464" alt="화면 캡처 2026-03-04 124240" src="https://github.com/user-attachments/assets/d4a748d0-0988-4879-842b-b04524fc3efd" />
+<img width="1313" height="448" alt="화면 캡처 2026-03-04 124302" src="https://github.com/user-attachments/assets/50df6f54-73e4-4faa-a22d-a4ebdb838f59" />
+<img width="1320" height="438" alt="화면 캡처 2026-03-04 124330" src="https://github.com/user-attachments/assets/9415f956-b9f1-4d2c-92df-835629cf2961" />
+<img width="1321" height="439" alt="화면 캡처 2026-03-04 124352" src="https://github.com/user-attachments/assets/e667ecc2-b32f-4bc7-af15-1ccf6919929a" />
